@@ -1,0 +1,151 @@
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background:url(../img/bg.png) bottom right no-repeat;
+
+    background-size: cover;
+    background-color: rgba(250, 250, 250, 1);
+   
+        margin: 0;
+        font-weight: 400;
+        font-size: .583333rem;
+        letter-spacing: normal;
+        line-height: 1rem;
+        margin-top: 0!important;
+       
+}
+
+.logo{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.login-wraper{
+    background: #fafafa;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 6rem;
+    height: auto;
+    min-height: 100vh;
+    width: 50rem;
+    box-shadow: 2px 2px 5px rgba(64,64,64,0.2);
+ }
+
+ .login{
+     text-align: center;
+ }
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.form-line {
+    border: 0 none;
+    background-image: linear-gradient(rgb(0, 149, 211), rgb(0, 149, 211)), linear-gradient(rgb(154,154,154), rgb(154,154,154));
+    background-size: 0px 1px, 100% 1px;
+    background-repeat: no-repeat;
+    background-position: left bottom, center calc(100% - 1px);
+    background-color: rgba(0, 0, 0, 0);
+    padding: .3rem .7rem;
+    min-width: 100%;
+    transition: all .3s;
+    margin: .25rem 0 2.5rem;
+}
+
+.forget{
+    text-align: right;
+}
+
+input::-webkit-input-placeholder {
+    /* placeholder颜色  */
+    color:rgb(116,116,116);
+    /* placeholder字体大小  */
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+input[type="text"]:focus {
+    background-size: 100% 2px, 100% 1px;
+    transition: all .3s;
+    border: none;
+    outline: none;
+}
+
+input[type="password"]:focus {
+    background-size: 100% 2px, 100% 1px;
+    transition: all .3s;
+    border: none;
+    outline: none;
+}
+
+p{
+    margin-top: 20px;
+}
+
+.seperator{
+    width: 5rem;
+    height: 1px;
+    background-color: #ccc;
+    margin: .5rem auto 0;
+    margin-top: 20px;
+}
+
+.mybutton{
+    background-color: grey;
+    cursor: not-allowed;
+    -webkit-appearance: none!important;
+    border: 1px solid #0079b8;
+    color: rgba(250, 250, 250, 1);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    line-height:30px;
+    letter-spacing: .12em;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0 .5rem;
+    outline: none;
+}
+
+
+
+* {
+    font-size: 14px;
+}
+
+
+a{
+    cursor: pointer;
+}
+
+a.color1:link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/*常规时候的样式*/
+a.color1:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/*鼠标指上去的样式*/
+a.color1:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+ 
+}
+
+/*访问过后的样式*/

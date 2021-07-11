@@ -1,0 +1,19 @@
+{
+  "name": "im",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MudNicolas",
+  "license": "MIT",
+  "dependencies": {
+    "cookies": "^0.8.0",
+    "express": "^4.17.1",
+    "markdown": "^0.5.0",
+    "mongoose": "^5.9.2",
+    "nodejs-websocket": "^1.7.2",
+    "swig": "^1.4.2"
+  }
+}

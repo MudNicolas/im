@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../public/css/login.css">
+    <link rel="stylesheet" href="../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/bootstrap-theme.css">
+
+    <title>登录</title>
+
+    <script type="text/javascript" src="../public/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../public/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../public/js/login.js"></script>
+
+</head>
+
+<body>
+    <div class="login-wraper">
+        <div class="logo">
+            <div class="glyphicon glyphicon-home" style="font-size: 20px;" data-toggle="tooltip" data-placement="right"
+                title="一个暂时不存在的主页"></div>
+        </div>
+        <h3 class="welcome" style="font-weight: lighter;">欢迎进入</h3>
+        <p style="font-weight: lighter; font-size:xx-large ;">俄罗斯套娃聊天室</p>
+        <div class="login">
+            <form name="form1" method="POST" action="../../routers/api.js/user/login5">
+                <br><br>
+                <div>
+                    <div>
+                        <input placeholder="您的用户名或电子邮箱地址" type="text" class="form-line" id="username" name="username"
+                            autocomplete="off"> <br>
+                        <input placeholder="密码" id="password" name="password" class="form-line" autocomplete="off"
+                            type="password">
+                    </div>
+                </div>
+
+                <P class="forget"><a>忘记了密码？ </a><span class="glyphicon glyphicon-info-sign"
+                        style="color: grey;font-size: 16px;" data-toggle="tooltip" data-placement="right"
+                        title="找回您的密码，不过还在开发中(￣▽￣)''"></span></P>
+
+                <button type="button" class="mybutton btn-block" id="login-btn">登录</button>
+                <p>没有帐户？<a href="register">立即注册</a></p>
+                <div class="seperator"></div>
+
+            </form>
+        </div>
+    </div>
+</body>

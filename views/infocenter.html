@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GHS</title>
+	<link type="text/css" rel="stylesheet" href="/public/css/materialize.css" media="screen,projection" />
+	<link type="text/css" rel="stylesheet" href="/public/css/ghpages-materialize.css" />
+	<link type="text/css" rel="stylesheet" href="/public/css/im.css">
+	<script src="../public/js/jquery-3.4.1.min.js"></script>
+	<script src="../public/js/materialize.min.js"></script>
+	<script src="../public/js/im.js"></script>
+</head>
+
+<body style="background-color: gainsboro;">
+	<main>
+		<div class="row">
+			<div class="col l6 offset-l3 m6 offset-m3 s12">
+				<div class="im col s12">
+					<div class="chats" style="border: 1px;height: 500px;overflow-y:auto;">
+						<!--templateMychat-->
+						<template id="mychat">
+							<div class='msgbox col s12'>
+								<div class='right'>
+									<img class='responsive-img circle' width='40px'
+										src='/public/img/avartar/avartar.jpg'>
+								</div>
+
+								<span class="right-align right" style="margin-right: 10px;font-size: 10px;">asd</span>
+								<br>
+								<div class='msgboxMy right'>
+									<span>" + info.mes + "</span>
+								</div>
+							</div>
+						</template>
+						<!--template-->
+						<!--templateMychatPic-->
+						<template id="mychatImg">
+							<div class='msgbox col s12'>
+								<div class='right'>
+									<img class='responsive-img circle' width='40px'
+										src='/public/img/avartar/avartar.jpg'>
+								</div>
+								<span class="right-align right" style="margin-right: 10px;font-size: 10px;">
+									
+								</span>
+								<br>
+								<div class='msgboxMyImg right'>
+									<span><img class=" responsive-img materialboxed"></span>
+								</div>
+							</div>
+						</template>
+						<!--template-->
+						<!--templateOtherschat-->
+						<template id='othersChat'>
+							<div class='msgbox col s12'>
+								<div class='left'>
+									<img class='responsive-img circle' width='40px'
+										src='/public/img/avartar/avartar.jpg'>
+								</div>
+								<span class="" style="margin-left: 10px;font-size: 10px;">asd</span>
+								<br>
+								<div class='msgboxOther left'>
+									<span>" + info.mes + "</span>
+								</div>
+							</div>
+						</template>
+						<!--temp-->
+							<!--templateOtherschatImg-->
+							<template id='othersChatImg'>
+								<div class='msgbox col s12'>
+									<div class='left'>
+										<img class='responsive-img circle' width='40px'
+											src='/public/img/avartar/avartar.jpg'>
+									</div>
+									<span class="" style="margin-left: 10px;font-size: 10px;">asd</span>
+									<br>
+									<div class='msgboxOtherImg left'>
+										<span><img class=" responsive-img materialboxed"></span>
+									</div>
+								</div>
+							</template>
+							<!--temp-->
+						<!--templateJoin-->
+						<template id='userJoined'>
+							<div class="col s12">
+								<center>
+									<div class="chip" style="font-size: 10px;">Nicolas加入对话</div>
+								</center>
+							</div>
+						</template>
+						<!---->
+						<div class="scrollbar" style="right:0px"></div>
+					</div>
+
+					<div class="inputbox">
+						<div class=" input-field">
+							<label for='userInputBox'>输入</label>
+							<textarea id='userInputBox' class="materialize-textarea"></textarea>
+						</div>
+
+						<button title="发送" id='sender' class="btn right waves-effect waves-teal"><i
+								class="material-icons">send</i></button>
+						<span id='myNick' class="right" style="margin: 6px;">{{userInfo.username}}</span>
+
+						<input type="file" style="cursor: pointer;display: none;" id="newImg" accept="image/*">
+						<i class="material-icons teal-text tooltipped " data-position="bottom" data-delay="50"
+							data-tooltip="选择图片" style="cursor: pointer;z-index: 100;"
+							onclick="chooseFile()">perm_media</i>
+
+					</div>
+				</div>
+			</div>
+
+
+			<div class=" hide-on-small-only m3 offset-m9">
+				<p>当前在线用户</p>
+				<span id='userList'></span>
+			</div>
+		</div>
+	</main>
+
+</body>
+
+</html>

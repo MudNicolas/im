@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../public/css/register.css">
+    <link rel="stylesheet" href="../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/bootstrap-theme.css">
+
+    <title>注册</title>
+
+    <script type="text/javascript" src="../public/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../public/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../public/js/register.js"></script>
+
+</head>
+
+<body>
+    <div class="login-wraper">
+        <div class="logo">
+            <div class="glyphicon glyphicon-home" style="font-size: 20px;" data-toggle="tooltip" data-placement="right"
+                title="一个暂时不存在的主页"></div>
+        </div>
+        <h3 class="welcome" style="font-weight: lighter;">欢迎进入</h3>
+        <p style="font-weight: lighter; font-size:xx-large ;">俄罗斯套娃的世界</p>
+
+        <form name="form1" method="POST" action="../../routers/api.js/user/login5">
+            <br><br>
+            <div>
+                <div>
+                    <input placeholder="用户名*" type="text" class="form-line" id="username" name="username"
+                        autocomplete="off"><span style="color: red;" id="ucheck"></span> 
+                    <input placeholder="密码*" id="password" name="password" class="form-line" autocomplete="off"
+                        type="password">
+                    <input placeholder="确认密码*" id="cpassword" name="cpassword" class="form-line" autocomplete="off"
+                        type="password"><span style="color: red;" id="pcheck">两次密码不一致</span>
+                    <input placeholder="Email" id="email" name="email" class="form-line" autocomplete="off" type="text">
+                    <input placeholder="电话号码"" id="phone" name="phone" class="form-line" autocomplete="off"
+                        type="text">
+                    <input placeholder="姓名" id="name" name="name" class="form-line" autocomplete="off" type="text">
+                    <div style="letter-spacing: 1px;">
+                        <input type="checkbox" style="margin-right:10px;cursor: pointer;margin-top: 30px;" name="tk" id="tk">*我同意<a data-toggle="tooltip" data-placement="right"
+                        title="没有这个条款">Dolls使用条款协议</a>中所述的条款和条件。
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <button type="button" class="mybutton btn-block" id="login-btn" onclick="register()">注册</button>
+            <p style="text-align: center;">已有帐户？<a href="login">立即登录</a></p>
+            <div class="seperator"></div>
+
+        </form>
+
+    </div>
+</body>
