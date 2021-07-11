@@ -27,4 +27,4 @@
 
 ![image](https://user-images.githubusercontent.com/58057598/125181067-db933800-e233-11eb-8b31-2aed6a4f4851.png)
 
-- 数据库端口为`27845`，model文件已包含，初次使用时创建空白数据库即可，系统会自动构建数据表
+- 数据库端口为`27845`，model文件已包含，初次使用时创建空白数据库`loginandregister`即可，系统会自动构建数据表
