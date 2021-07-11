@@ -15,6 +15,9 @@
 
 # 注意事项
 
+- 使用`npm install`加载所有依赖项 
+
+
 - 聊天室需要登录
 
 ![image](https://user-images.githubusercontent.com/58057598/125181029-72abc000-e233-11eb-808a-068dbae8ac7d.png)
@@ -24,4 +27,4 @@
 
 ![image](https://user-images.githubusercontent.com/58057598/125181067-db933800-e233-11eb-8b31-2aed6a4f4851.png)
 
-- 数据库端口为27845，model文件已包含，初次使用时创建空白数据库即可，系统会自动构建数据表
+- 数据库端口为`27845`，model文件已包含，初次使用时创建空白数据库即可，系统会自动构建数据表
